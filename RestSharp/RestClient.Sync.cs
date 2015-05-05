@@ -1,5 +1,6 @@
 ﻿#if FRAMEWORK || PocketPC
 using System;
+using System.Text;
 
 namespace RestSharp
 {
@@ -13,7 +14,7 @@ namespace RestSharp
         public byte[] DownloadData(IRestRequest request)
         {
             var response = Execute(request);
-            return response.RawBytes;
+            return Encoding.ASCII.GetBytes(response.Content);
         }
 
         /// <summary>
