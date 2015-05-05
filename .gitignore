@@ -38,7 +38,6 @@ Download/
 *.userprefs
 restsharp-computed.nuspec
 Backup/
-*.htm
 *.orig
 DownloadSigned/
 RestSharp.IntegrationTests/config.json
